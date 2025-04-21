@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+}
+
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(135deg, #2c3e50, #4ca1af); /* Elegant dark teal blend */
+}
+
+#panel {
+    width: 80%;
+    height: 80%;
+    border-radius: 1rem;
+    overflow: hidden;
+    background-color: rgba(25, 25, 25, 0.9);
+    border: 0.1rem solid rgba(200, 200, 200, 0.2);
+    box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.3);
+}
+
+#ptop {
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15%;
+    color: #f1f1f1;
+    background: linear-gradient(to right, #141e30, #243b55); /* Steel-blue gradient */
+    border-bottom: 0.1rem solid rgba(255, 255, 255, 0.1);
+}
+
+.elem {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.elem h2 {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.box {
+    padding: 0.6rem 1.4rem;
+    background-color: #f0f0f0;
+    color: #1a1a1a;
+    font-weight: 600;
+    font-size: 1.2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.2);
+}
+
+#pbtm {
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1.5rem;
+    width: 100%;
+    height: calc(100% - 5rem);
+}
+
+.bubble {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    width: 3rem;
+    font-size: 1rem;
+    color: #ffffff;
+    background: linear-gradient(135deg, #667db6, #0082c8); /* Subtle purple-blue */
+    border-radius: 50%;
+    font-weight: 600;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.bubble:hover {
+    background: linear-gradient(135deg, #0082c8, #667db6); /* Reverse for hover effect */
+    cursor: pointer;
+    transform: scale(1.15);
+}
+
+/* 🌐 MEDIA QUERY for Responsiveness */
+@media (max-width: 768px) {
+    #panel {
+        width: 95%;
+        height: 90%;
+        margin: 1rem;
+    }
+
+    #ptop {
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 1rem;
+        height: auto;
+    }
+
+    .elem {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .elem h2 {
+        font-size: 1.1rem;
+    }
+
+    .box {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
+
+    #pbtm {
+        gap: 0.8rem;
+        padding: 1rem;
+    }
+
+    .bubble {
+        height: 2.5rem;
+        width: 2.5rem;
+        font-size: 0.9rem;
+    }
+}
