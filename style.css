@@ -8,7 +8,6 @@
 html, body {
     height: 100%;
     width: 100%;
-    font-size: 16px;
 }
 
 #main {
@@ -17,85 +16,85 @@ html, body {
     align-items: center;
     height: 100%;
     width: 100%;
-    background: linear-gradient(135deg, #2c3e50, #4ca1af); /* Elegant dark teal blend */
+    background: linear-gradient(135deg, #c7d2fe, #e0f2fe); /* Soft light blue to very light blue */
 }
 
 #panel {
     width: 80%;
     height: 80%;
-    border-radius: 1rem;
+    border-radius: 10px;
     overflow: hidden;
-    background-color: rgba(25, 25, 25, 0.9);
-    border: 0.1rem solid rgba(200, 200, 200, 0.2);
-    box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.3);
+    background-color: #f0f9ff; /* Very soft bluish-white */
+    border: 1px solid #bfdbfe;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.08);
 }
 
 #ptop {
-    height: 5rem;
+    height: 80px;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 15%;
-    color: #f1f1f1;
-    background: linear-gradient(to right, #141e30, #243b55); /* Steel-blue gradient */
-    border-bottom: 0.1rem solid rgba(255, 255, 255, 0.1);
+    padding: 0 20%;
+    color: #1e3a8a;
+    background: linear-gradient(to right, #93c5fd, #60a5fa); /* Mid to darker blue gradient */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .elem {
     display: flex;
     align-items: center;
-    gap: 0.8rem;
+    gap: 10px;
 }
 
 .elem h2 {
-    font-size: 1.4rem;
+    font-size: 22px;
     font-weight: 600;
 }
 
 .box {
-    padding: 0.6rem 1.4rem;
-    background-color: #f0f0f0;
-    color: #1a1a1a;
+    padding: 10px 20px;
+    background-color: #dbeafe;
+    color: #1e293b;
     font-weight: 600;
-    font-size: 1.2rem;
-    border-radius: 0.5rem;
-    box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.2);
+    font-size: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 
 #pbtm {
-    border-radius: 0.5rem;
+    border-radius: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 1rem;
-    padding: 1.5rem;
+    gap: 15px;
+    padding: 20px;
     width: 100%;
-    height: calc(100% - 5rem);
+    height: calc(100% - 80px);
 }
 
 .bubble {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 3rem;
-    width: 3rem;
-    font-size: 1rem;
-    color: #ffffff;
-    background: linear-gradient(135deg, #667db6, #0082c8); /* Subtle purple-blue */
+    height: 45px;
+    width: 45px;
+    color: #1e293b;
+    background: linear-gradient(135deg, #bfdbfe, #93c5fd); /* Light Blue bubble */
     border-radius: 50%;
     font-weight: 600;
     transition: background 0.3s ease, transform 0.2s ease;
 }
 
 .bubble:hover {
-    background: linear-gradient(135deg, #0082c8, #667db6); /* Reverse for hover effect */
+    background: linear-gradient(135deg, #3b82f6, #2563eb); /* Vibrant blue on hover */
+    color: #ffffff;
     cursor: pointer;
-    transform: scale(1.15);
+    transform: scale(1.1);
 }
 
-/* 🌐 MEDIA QUERY for Responsiveness */
+/* MEDIA QUERY */
 @media (max-width: 768px) {
     #panel {
         width: 95%;
@@ -105,9 +104,9 @@ html, body {
 
     #ptop {
         flex-direction: row;
-        align-items: center;
-        gap: 0.5rem;
-        padding: 1rem;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 0.5rem;
         height: auto;
     }
 
@@ -117,22 +116,22 @@ html, body {
     }
 
     .elem h2 {
-        font-size: 1.1rem;
+        font-size: 18px;
     }
 
     .box {
-        font-size: 1rem;
-        padding: 0.5rem 1rem;
+        font-size: 16px;
+        padding: 8px 16px;
     }
 
     #pbtm {
-        gap: 0.8rem;
-        padding: 1rem;
+        gap: 10px;
+        padding: 10px;
     }
 
     .bubble {
-        height: 2.5rem;
-        width: 2.5rem;
-        font-size: 0.9rem;
+        height: 40px;
+        width: 40px;
+        font-size: 14px;
     }
 }
