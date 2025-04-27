@@ -5,7 +5,8 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-html, body {
+html,
+body {
     height: 100%;
     width: 100%;
 }
@@ -16,7 +17,8 @@ html, body {
     align-items: center;
     height: 100%;
     width: 100%;
-    background: linear-gradient(135deg, #c7d2fe, #e0f2fe); /* Soft light blue to very light blue */
+    background: linear-gradient(135deg, #c7d2fe, #e0f2fe);
+    /* Soft light blue to very light blue */
 }
 
 #panel {
@@ -24,7 +26,8 @@ html, body {
     height: 80%;
     border-radius: 10px;
     overflow: hidden;
-    background-color: #f0f9ff; /* Very soft bluish-white */
+    background-color: #f0f9ff;
+    /* Very soft bluish-white */
     border: 1px solid #bfdbfe;
     box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.08);
 }
@@ -37,7 +40,8 @@ html, body {
     align-items: center;
     padding: 0 20%;
     color: #1e3a8a;
-    background: linear-gradient(to right, #93c5fd, #60a5fa); /* Mid to darker blue gradient */
+    background: linear-gradient(to right, #93c5fd, #60a5fa);
+    /* Mid to darker blue gradient */
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
@@ -81,17 +85,35 @@ html, body {
     height: 45px;
     width: 45px;
     color: #1e293b;
-    background: linear-gradient(135deg, #bfdbfe, #93c5fd); /* Light Blue bubble */
+    background: linear-gradient(135deg, #bfdbfe, #93c5fd);
+    /* Light Blue bubble */
     border-radius: 50%;
     font-weight: 600;
     transition: background 0.3s ease, transform 0.2s ease;
 }
 
 .bubble:hover {
-    background: linear-gradient(135deg, #3b82f6, #2563eb); /* Vibrant blue on hover */
+    background: linear-gradient(135deg, #3b82f6, #2563eb);
+    /* Vibrant blue on hover */
     color: #ffffff;
     cursor: pointer;
     transform: scale(1.1);
+}
+
+#resetBtn {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #00b894;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 6rem;
+    transition: background-color 0.3s ease;
+}
+
+#resetBtn:hover {
+    background-color: #019875;
 }
 
 /* MEDIA QUERY */
